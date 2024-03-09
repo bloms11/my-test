@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* transition: 0.3s ease; */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 56px;
+  color: #454444;
+  font-weight: 700;
+  overflow-y: hidden;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  overflow-y: hidden;
+  color: #454444;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  overflow-y: hidden;
+  color: #454444;
+}
+p {
+  font-size: 16px;
+  color: #454444;
+  overflow-y: hidden;
+}
+.stacked-cards-container {
+  /* z-index: -400; */
+}
+.card {
+  width: 350px; /* Adjusted width to accommodate the left offset */
+  height: 450px;
+  position: absolute;
+  /* z-index: 1; */
+  /* top: 8%;
+  left: 12%; */
+  right: 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* .card + .card {
+  top: 20px; 
+  z-index: 0; 
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px; 
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+} */
