@@ -76,7 +76,7 @@ function App() {
   const headerAnimation = {
     initial: { x: 120, opacity: 0 },
     animate: { opacity: 1, x: 0 },
-    transition: { duration: 0.5, delay: 8 },
+    transition: { duration: 0.5 },
   };
 
   const assisstanceAnimation = {
